@@ -2,7 +2,7 @@ FROM     ubuntu:14.04
 MAINTAINER Mohamed IDRISSI "med.idrissi@outlook.com"
 
 # install dependencies
-RUN apt-get update && apt-get install -y build-essential autoconf automake git-core mercurial subversion build-essential autoconf automake libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool wget
+RUN apt-get update && apt-get install -y build-essential autoconf automake git-core nano mercurial subversion build-essential autoconf automake libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool wget
 
 # Install rabbitmq-c
 RUN cd /root && git clone https://github.com/alanxz/rabbitmq-c && cd rabbitmq-c && git submodule init && git submodule update
